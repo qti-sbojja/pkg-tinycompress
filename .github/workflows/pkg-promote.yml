@@ -23,9 +23,9 @@ jobs:
   promote:
     name: Promote
 
-    uses: qualcomm-linux/qcom-build-utils/.github/workflows/pkg-promote-reusable-workflow.yml@main
+    uses: qti-sbojja/qcom-build-utils/.github/workflows/pkg-promote-reusable-workflow.yml@fix/promote-annotated-tag-parent
     with:
-      qcom-build-utils-ref: main
+      qcom-build-utils-ref: fix/promote-annotated-tag-parent
       debian-branch: ${{inputs.debian-branch}}
       upstream-tag: ${{inputs.upstream-tag}}
       upstream-repo: ${{vars.UPSTREAM_REPO_GITHUB_NAME}}
